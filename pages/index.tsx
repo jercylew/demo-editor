@@ -21,6 +21,9 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <h1 className="text-3xl font-bold underline">
+          Hello world!
+        </h1>
         <p>I am a full stack developer</p>
         <p>
           (This is a sample website - you’ll be building a site like this in{' '}
@@ -32,7 +35,7 @@ export default function Home({
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+              <Link href={`/posts/${id}`} className='text-blue-400 underline'>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
