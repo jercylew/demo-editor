@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Yuming Liu'
-export const siteTitle = 'Yuming\'s Home Page'
+export const siteTitle = 'Demo Editor'
 
 export default function Layout({
   children,
@@ -31,7 +31,7 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      {/* <header className={styles.header}>
         {home ? (
           <>
             <Image
@@ -63,7 +63,7 @@ export default function Layout({
             </h2>
           </>
         )}
-      </header>
+      </header> */}
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
